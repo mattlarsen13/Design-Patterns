@@ -38,8 +38,8 @@ public class Cartel implements Observer{
             for (String accomplice : sighting.getAccomplices()) {
                 log.append(accomplice).append(", ");
             }
-            log.deleteCharAt(log.length() - 1);  // Remove the trailing comma
-            log.deleteCharAt(log.length() - 1);  // Remove the space after the comma
+            log.deleteCharAt(log.length() - 1);
+            log.deleteCharAt(log.length() - 1);  
             log.append("\n");
         }
         return log.toString();
